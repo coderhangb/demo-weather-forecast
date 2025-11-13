@@ -84,7 +84,7 @@ function renderForecast(forecastData) {
     const forecastDay = document.getElementById(`forecast-day-${i + 1}`);
     const forecastTemp = document.getElementById(`forecast-temp-${i + 1}`);
 
-    forecastThumb.src = `http://openweathermap.org/img/wn/${getIconCode(
+    forecastThumb.src = `https://openweathermap.org/img/wn/${getIconCode(
       forecastData,
       i
     )}.png`;
