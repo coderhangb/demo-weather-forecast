@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Poppins, sans-serif;
+  color: #ebebeb;
+  background: #474858;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+a,
+img,
+button,
+input,
+label,
+textarea,
+select {
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+input,
+textarea {
+  background: transparent;
+}

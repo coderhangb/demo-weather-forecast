@@ -1,0 +1,134 @@
+@use "./mixins";
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-top: 100px;
+  font-size: 8rem;
+  font-weight: 200;
+  line-height: 1.2;
+
+  &__highlight {
+    font-weight: 700;
+  }
+}
+
+.form {
+  margin: 30px 0 40px;
+  height: 40px;
+  display: flex;
+  column-gap: 20px;
+
+  &__input {
+    width: 400px;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding: 8px 12px;
+  }
+
+  &__btn {
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding: 8px 10px;
+  }
+}
+
+.result {
+  width: 600px;
+  display: flex;
+  border-radius: 20px;
+  background: #272931;
+}
+
+.result-thumb {
+  display: flex;
+  flex-direction: column;
+  background: url(../img/cloud.jpg);
+  background-size: cover;
+  width: 210px;
+  padding: 15px 15px 10px;
+  border-radius: 20px;
+
+  &__day,
+  &__temp {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__date {
+    margin-top: 4px;
+  }
+
+  &__location {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  &__temp {
+    margin-top: auto;
+  }
+
+  &__detail-weather {
+    margin-top: 4px;
+  }
+}
+
+.result-info {
+  flex: 1;
+  padding: 15px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__title-prop {
+    font-weight: 300;
+  }
+}
+
+.result-predict {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-radius: 8px;
+  background: #2b2e36;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__day {
+    font-weight: 300;
+  }
+
+  &__temp {
+    font-weight: 600;
+  }
+}

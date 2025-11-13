@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Today</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1 class="header">
+          Weather
+          <span class="header__highlight">Today</span>
+        </h1>
+
+        <form action="#" class="form" id="form">
+          <input
+            type="text"
+            name="form__input"
+            id="form-input"
+            class="form__input"
+            spellcheck="false"
+            autocomplete="off"
+            placeholder="Enter city to track weather"
+          />
+          <button type="submit" class="form__btn" id="form-btn">Track</button>
+        </form>
+
+        <div class="result">
+          <div class="result-thumb">
+            <h2 class="result-thumb__day" id="day">----</h2>
+            <p class="result-thumb__date" id="date">----</p>
+            <p class="result-thumb__location" id="thumb-location">----</p>
+            <p class="result-thumb__temp" id="thumb-temp">--°C</p>
+            <p class="result-thumb__detail-weather" id="thumb-detail-weather">
+              -----
+            </p>
+          </div>
+
+          <div class="result-info">
+            <div class="result-info__row">
+              <p class="result-info__title">WEATHER</p>
+              <p class="result-info__title-prop" id="info-weather">---</p>
+            </div>
+            <div class="result-info__row">
+              <p class="result-info__title">HUMIDITY</p>
+              <p class="result-info__title-prop" id="info-humidity">---</p>
+            </div>
+            <div class="result-info__row">
+              <p class="result-info__title">WIND</p>
+              <p class="result-info__title-prop" id="info-wind">---</p>
+            </div>
+            <div class="result-info__row">
+              <p class="result-info__title">AIR PRESSURE</p>
+              <p class="result-info__title-prop" id="info-air">---</p>
+            </div>
+            <div class="result-info__row">
+              <p class="result-info__title">MAX TEMP</p>
+              <p class="result-info__title-prop" id="info-max-temp">---</p>
+            </div>
+            <div class="result-info__row">
+              <p class="result-info__title">MIN TEMP</p>
+              <p class="result-info__title-prop" id="info-min-temp">---</p>
+            </div>
+
+            <div class="result-predict">
+              <!-- Day 1 -->
+              <div class="result-predict__item">
+                <img
+                  alt=""
+                  class="result-predict__icon"
+                  id="forecast-thumb-1"
+                />
+                <p class="result-predict__day" id="forecast-day-1">--</p>
+                <p class="result-predict__temp" id="forecast-temp-1">--</p>
+              </div>
+
+              <!-- Day 2 -->
+              <div class="result-predict__item">
+                <img
+                  alt=""
+                  class="result-predict__icon"
+                  id="forecast-thumb-2"
+                />
+                <p class="result-predict__day" id="forecast-day-2">--</p>
+                <p class="result-predict__temp" id="forecast-temp-2">--</p>
+              </div>
+
+              <!-- Day 3 -->
+              <div class="result-predict__item">
+                <img
+                  alt=""
+                  class="result-predict__icon"
+                  id="forecast-thumb-3"
+                />
+                <p class="result-predict__day" id="forecast-day-3">--</p>
+                <p class="result-predict__temp" id="forecast-temp-3">--</p>
+              </div>
+
+              <!-- Day 4 -->
+              <div class="result-predict__item">
+                <img
+                  alt=""
+                  class="result-predict__icon"
+                  id="forecast-thumb-4"
+                />
+                <p class="result-predict__day" id="forecast-day-4">--</p>
+                <p class="result-predict__temp" id="forecast-temp-4">--</p>
+              </div>
+
+              <!-- Day 5 -->
+              <div class="result-predict__item">
+                <img
+                  alt=""
+                  class="result-predict__icon"
+                  id="forecast-thumb-5"
+                />
+                <p class="result-predict__day" id="forecast-day-5">--</p>
+                <p class="result-predict__temp" id="forecast-temp-5">--</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
